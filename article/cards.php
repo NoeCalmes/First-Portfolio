@@ -13,7 +13,7 @@ if (isset($_GET['category'])) {
     <!-- left card -->
     <div class="left-card">
         <?php if ($showAllCards || $showWebCard): ?>
-            <a href="#" type="button">
+            <a href="website.php" type="button">
                 <div class="card1" id="web-card">
                     <img src="img/article-right/work/card1.svg" alt="">
                     <p>Frontend</p>
@@ -35,7 +35,7 @@ if (isset($_GET['category'])) {
         <?php endif; ?>
 
         <?php if ($showAllCards || $showCmsCard): ?>
-            <a href="#" type="button">
+            <a href="cms.php" type="button">
                 <div class="card2" id="cms-card">
                     <img src="img/article-right/work/card2.svg" alt="">
                     <p>CMS</p>

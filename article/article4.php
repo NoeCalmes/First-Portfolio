@@ -67,6 +67,20 @@
 </div>
 
 
+
+<script>
+    <?php
+    if (isset($_GET['message'])) {
+        $message = urldecode($_GET['message']);
+        echo 'var messageStatus = document.getElementById("message-status");';
+        echo 'messageStatus.style.display = "block";';
+        echo 'messageStatus.innerHTML = "' . $message . '";';
+    }
+    ?>
+</script>
+
+
+<!-- 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var messageStatus = document.getElementById("message-status");
@@ -104,4 +118,6 @@
                 });
         });
     });
-</script>
+</script> -->
+
+

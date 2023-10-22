@@ -1,4 +1,4 @@
-<?php $activePage = 'resume'; // Page active?>
+<?php $activePage = 'work'; // Page active?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,13 +22,7 @@
 </head>
 
 <body>
-    <div id="loader-overlay">
-        <div class="loader">
-            <div class="leaf"></div>
-            <div class="leaf"></div>
-            <div class="leaf"></div>
-        </div>
-    </div>
+
     <!-- header debut -->
     <div class="header">
         <div class="left">
@@ -214,9 +208,32 @@
                 </div>
             </div>
 
-            <?php include 'article/article2.php'; ?>
+            <div class="article2">
+                <div class="article-right">
+                    <a href="work.php">
+                        <div class="dark arrow-back bientoi ">
+                            <img src="img/article-right/work/arrow.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="about">
+                        <div class="centrer-d">
+                            <h1 class="dark fr lop">Site Ecommerce</h1>
+                            <h1 class="dark en lop" style="display:none;">Site Ecommerce</h1>
+                            <p class="soustitre-p dark">Avisimo /Vente QR-CODE</p>
 
-        </div>
+                        </div>
+                        <div class="line-about"></div>
+                    </div>
+
+                    <div class="iframe-container">
+                        <img class="custom-iframe" src="img/avisimo.png" alt=""> 
+                    </div>
+
+                </div>
+            </div>
+
+
+
     </article>
     <!-- ARTICLE LEFT fin-->
     <footer>

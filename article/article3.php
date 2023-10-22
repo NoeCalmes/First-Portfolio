@@ -2,7 +2,7 @@
 $showWebCard = false;
 $showAppCard = false;
 $showCmsCard = false;
-$showAllCard = false; 
+$showAllCard = false;
 if (isset($_GET['category'])) {
     $category = $_GET['category'];
     switch ($category) {
@@ -38,7 +38,7 @@ if (isset($_GET['category'])) {
         <div class="small-navbar">
             <ul>
                 <a href="?category=all" type="button">
-                    <li class="first rizoto fr " >Tout</li>
+                    <li class="first rizoto fr ">Tout</li>
                     <li class="first en" style="display:none;">All</li>
                 </a>
 
@@ -61,7 +61,6 @@ if (isset($_GET['category'])) {
 
         <?php include 'cards.php'; ?>
 
-        <!-- Inclure le fichier PHP avec les cartes -->
 
     </div>
 </div>

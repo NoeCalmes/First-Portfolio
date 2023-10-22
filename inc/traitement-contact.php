@@ -1,49 +1,33 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $destinataire = "noecalmes.pro@gmail.com"; // Adresse du destinataire prédéfinie
+    $sujet = "Nouveau message depuis le site web"; // Sujet prédéfini pour l'e-mail
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
-require_once(__DIR__ . '/../vendor/autoload.php');
-use \Mailjet\Resources;
-
-define('API_USER', 'b566844015a8e589bcc3155b460c5e42');
-define('API_LOGIN', '9b0572e92e340b2829878471ab1038cc');
-$mj = new \Mailjet\Client(API_USER, API_LOGIN, true, ['version' => 'v3.1']);
-
-if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
+    // Valider l'adresse e-mail
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $body = [
-            'Messages' => [
-                [
-                    'From' => [
-                        'Email' => "noecalmes.pro@gmail.com",
-                        'Name' => "Noé Calmes"
-                    ],
-                    'To' => [
-                        [
-                            'Email' => "noecalmes.pro@gmail.com",
-                            'Name' => "Noé Calmes"
-                        ]
-                    ],
-                    'Subject' => "Demande de renseignement",
-                    'TextPart' => "$email, $message",
-                ]
-            ]
-        ];
+        // L'adresse e-mail est valide, nous pouvons envoyer l'e-mail
+        $message_body = "De : $name\n";
+        $message_body .= "E-mail : $email\n";
+        $message_body .= "Message : $message";
 
-        try {
-            $response = $mj->post(Resources::$Email, ['body' => $body]);
-            $response->success();
-            echo "Email envoyé avec succès !";
-        } catch (\Mailjet\Exception $e) {
-            echo 'Erreur Mailjet: ' . $e->getMessage();
+        // Envoi de l'e-mail
+        $headers = "From: $email";
+        if (mail($destinataire, $sujet, $message_body, $headers)) {
+            $messageStatus = "Email envoyé avec succès !";
+        } else {
+            $messageStatus = "Erreur. Veuillez réessayer plus tard.";
         }
     } else {
-        echo "Email non valide";
+        // L'adresse e-mail n'est pas valide
+        $messageStatus = "Email non valide. Veuillez saisir une adresse e-mail valide.";
     }
+
+    // Redirection vers contact.php avec le message
+    header('Location: ../contact.php?message=' . urlencode($messageStatus));
 } else {
-    header('Location:../contact.php');
-    die();
+    header('Location: ../contact.php');
 }
 ?>

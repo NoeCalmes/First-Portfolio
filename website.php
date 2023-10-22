@@ -1,4 +1,4 @@
-<?php $activePage = 'resume'; // Page active?>
+<?php $activePage = 'work'; // Page active?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -214,9 +214,32 @@
                 </div>
             </div>
 
-            <?php include 'article/article2.php'; ?>
+            <div class="article-web">
+                <div class="article-right">
+                    <a href="work.php">
+                        <div class="arrow-back dark bientoi">
+                            <img src="img/article-right/work/arrow.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="about">
+                        <div class="centrer-d">
+                            <h1 class="dark fr lop">Site Vitrine</h1>
+                            <h1 class="dark en lop" style="display:none;">Showcase Site </h1>
+                            <p class="soustitre-p dark">Auto-Ecole Va-là</p>
 
-        </div>
+                        </div>
+                        <div class="line-about"></div>
+                    </div>
+
+                    <div class="iframe-container">
+                        <iframe class="custom-iframe" src="https://www.autoecole-vala.fr/"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+
+
     </article>
     <!-- ARTICLE LEFT fin-->
     <footer>

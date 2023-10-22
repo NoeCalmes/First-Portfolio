@@ -3,8 +3,8 @@
 
         <div class="about">
             <div class="centrer-d">
-                <h1 class="dark fr">Parcours</h1>
-                <h1 class="dark en" style="display:none;">Resume</h1>
+                <h1 class="dark fr lop">Parcours</h1>
+                <h1 class="dark en lop" style="display:none;">Resume</h1>
             </div>
             <div class="line-about"></div>
         </div>
@@ -39,7 +39,7 @@
                     <h2 class="fr">BTS SIO</h2>
                     <h2 class="en" style="display:none;">BTEC HND Computer Science</h2>
                 </div>
-            
+
 
                 <div class="card">
                     <p>2019-2021</p>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="card">
-                    <p>2023 - Present</p>
+                    <p>Present</p>
                     <h1 class="fr">Etudiant Developpeur</h1>
                     <h1 class="en" style="display:none;">Student Developer</h1>
                     <h2 class="fr">Autodidacte</h2>
@@ -126,7 +126,7 @@
                     <p>Javascript</p>
                     <p>PHP</p>
                     <p>SQL</p>
-                    <p>Bootstrap</p>
+                    <p>CodeIgniter</p>
                     <p>Wordpress</p>
                     <p>JAVA</p>
                 </div>
@@ -140,9 +140,9 @@
                     <p class="fr">Gestion du temps</p>
                     <p class="en" style="display:none;">Management of time</p>
                     <p class="fr">Flexibilité</p>
-                    <p class="en" style="display:none;">Flexibility</p>
-                    <p class="fr">Communication impeccable</p>
-                    <p class="en" style="display:none;">Impeccable communication</p>
+                    <p class="en troisy" style="display:none;">Flexibility</p>
+                    <p class="fr">Autonomie</p>
+                    <p class="en" style="display:none;">Autonomy</p>
                     <p class="fr">Recherche</p>
                     <p class="en lav" style="display:none;">Search</p>
                     <p class="fr">Ecriture</p>

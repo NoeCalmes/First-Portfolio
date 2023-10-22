@@ -79,8 +79,10 @@ body {
 
 /* Styles pour les numéros de téléphone */
 a[href^="tel:"] {
-    color: black; /* Remplacez "votrecouleur" par la couleur que vous souhaitez utiliser */
-    text-decoration: none; /* Supprime la décoration du lien (soulignement) */
+    color: black;
+    /* Remplacez "votrecouleur" par la couleur que vous souhaitez utiliser */
+    text-decoration: none;
+    /* Supprime la décoration du lien (soulignement) */
 }
 
 .header .right {
@@ -567,8 +569,6 @@ button:hover .icon-3 {
 }
 
 
-
-
 article .container img.dow {
     position: absolute;
 
@@ -756,7 +756,6 @@ nav .container .card p {
     font-size: 40px;
     letter-spacing: 0.025em;
     color: #0B0909;
-
 
 }
 
@@ -1489,7 +1488,7 @@ nav .container .card p {
 
 
 .article2 .right-end .work p.lav {
-    margin: 0 27px 12px 0;
+    margin: 0 48px 12px 0;
 }
 
 .article4 .element .formulaire button {
@@ -1532,7 +1531,9 @@ nav .container .card p {
     box-shadow: 0 -2px 10px rgb(22, 22, 22);
 }
 
-
+.darkmode .soustitre-p {
+    color: white;
+}
 
 .dark-mode .article1 .article-right,
 .dark-mode .article2 .article-right,
@@ -1609,6 +1610,10 @@ nav .container .card p {
 .dark-mode .article4 .article-right h1.dark,
 .dark-mode .article-left h1.dark {
     color: #ffffff;
+}
+
+.dark-mode .bientoi {
+    background-color: #252525;
 }
 
 .dark-mode .article1 .article-right p.grey,
@@ -1700,8 +1705,27 @@ nav .container .card p {
 
 }
 
+.article2 .right-end .work p.lav {
+    margin: 0 20px 12px 0;
+}
+
+.article2 .right-end .work p.troisy {
+    margin-right: 50px;
+}
 
 @media screen and (min-width: 1275px) and (max-width: 1375px) {
+
+    .article2 .right-end .work p.lav {
+        margin: 0 20px 12px 0;
+    }
+
+    .custom-iframe {
+        width: 798px !important;
+        height: 580px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
     .header,
     nav {
@@ -1774,11 +1798,19 @@ nav .container .card p {
 /* responsive 1275px debut */
 @media screen and (min-width: 1150px) and (max-width: 1274px) {
 
+
     .header,
     nav {
         max-width: 1105px;
     }
 
+    .custom-iframe {
+        width: 780px !important;
+        height: 580px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
     .article3 .small-navbar ul {
         padding-right: 50px;
@@ -2020,6 +2052,10 @@ nav .container .card p {
         margin-bottom: 10px;
     }
 
+    .article2 .right-end .work p.lav {
+        margin: 0 67px 12px 0;
+    }
+
     /* contact page fin */
 }
 
@@ -2032,6 +2068,24 @@ nav .container .card p {
     article .container {
         flex-direction: column;
     }
+
+    .article2 .right-end .work p.lav {
+        margin: 0 20px 12px 0 !important;
+    }
+
+    .custom-iframe {
+        width: 785px !important;
+        height: 500px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .iframe-container {
+        padding-bottom: 40px;
+    }
+
 
     .article2 .right-end .work p.lav {
         margin: 0 34px 12px 0;
@@ -2098,7 +2152,8 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
+    .article4 .article-right,
+    .article-web .article-right {
         margin: auto;
         margin-bottom: 10px;
         width: 900px;
@@ -2281,6 +2336,20 @@ nav .container .card p {
     .article1 .card-desc .card p {
         width: 365px;
     }
+
+    .custom-iframe {
+        width: 780px !important;
+        height: 610px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .iframe-container {
+        margin: auto;
+        padding-top: 20px;
+    }
+
 
     /* resume page debut */
     .article2 .article-right .about h1 {
@@ -2510,6 +2579,13 @@ nav .container .card p {
     }
 
 
+    .container .article-left p.noe.fr {
+        margin-left: 117px !important;
+    }
+
+    .container .article-left p.noe.en {
+        margin-left: 128px;
+    }
 
     /* contact page fin */
 }
@@ -2524,12 +2600,41 @@ nav .container .card p {
         flex-direction: column;
     }
 
+    .container .article-left p.noe {
+        margin-left: 120px;
+    }
+
+    .container .article-left p.noe.en {
+        margin-left: 125px;
+    }
+
+    .custom-iframe {
+        width: 680px !important;
+        height: 600px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .iframe-container {
+        padding-bottom: 40px;
+    }
+
+    .article2 .right-end .work p.lav {
+        margin: 0 20px 12px 0;
+    }
+
     .article3 .small-navbar ul {
         padding-right: 83px;
     }
 
     .article3 .small-navbar li {
         padding: 21px 0px 0px 19px;
+    }
+
+    .grey .noe .fr {
+        font-size: 20px;
     }
 
     .header,
@@ -2628,8 +2733,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 800px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 800px !important;
         margin: auto;
         margin-bottom: 10px;
         height: 735px;
@@ -2988,10 +3094,55 @@ nav .container .card p {
 
 
 @media screen and (min-width: 695px) and (max-width: 819px) {
+    body:not(.home-page) .article-left {
+        display: none;
+    }
+
+    .arrow-back {
+        right: 9% !important;
+        top: 8% !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .arrow-back img {
+        width: 25px !important;
+
+    }
+
+    .article-web .article-right {
+        margin-bottom: 10px !important;
+    }
+
+    .article-web .article-right .about .line-about {
+        margin-left: 30px !important;
+        width: 220px !important;
+    }
 
     article .container {
         flex-direction: column;
     }
+
+    .article2 .right-end .work p {
+        margin: 0 11px 12px 0;
+    }
+
+    .article2 .right-end .work p.lav {
+        margin-right: 71px !important;
+    }
+
+
+
+    .custom-iframe {
+        width: 590px !important;
+
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+
 
     .header,
     nav {
@@ -3118,7 +3269,7 @@ nav .container .card p {
     .container .article-left p.noe {
         position: absolute;
         top: 75%;
-        left: -9%;
+        left: -8.4%;
     }
 
     .container .article-left h1.calmes {
@@ -3453,8 +3604,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 680px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 680px !important;
         margin: auto;
     }
 
@@ -3491,18 +3643,64 @@ nav .container .card p {
 
 @media screen and (min-width: 561px) and (max-width: 694px) {
 
+    body:not(.home-page) .article-left {
+        display: none;
+    }
+
+    .arrow-back {
+        right: 5% !important;
+        top: 3% !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .arrow-back img {
+        width: 25px !important;
+
+    }
+
+    .article-web .article-right {
+        margin-bottom: 5px !important;
+    }
+
+    .article-web .article-right .about .line-about {
+        margin-left: 38px;
+        margin-top: 10px;
+        margin-top: 10px;
+    }
+
+    .article-web .article-right .about {
+        flex-direction: column;
+        padding: 45px 0px 0px 0px !important;
+    }
+
+    /* display: flex;
     /* responsive 1275px debut */
     article .container {
         flex-direction: column;
     }
 
+    .article2 .right-end .work p.troisy {
+        margin-right: 12px;
+    }
+
     .article2 .right-end .work p.lav {
-        margin: 0 8px 12px 0 !important;
+        margin: 0 15px 12px 0 !important;
     }
 
     .article2 .article-right .about h1 {
         font-size: 30px !important;
     }
+
+    .custom-iframe {
+        width: 500px !important;
+        height: 600px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+
 
     .article4 .article-right .about h1 {
         font-size: 30px !important;
@@ -3613,7 +3811,7 @@ nav .container .card p {
     .container .article-left p.noe {
         position: absolute;
         top: 83%;
-        left: -15.5%;
+        left: -15.2%;
     }
 
     .container .article-left h1.calmes {
@@ -3705,8 +3903,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 550px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 550px !important;
         margin: auto;
     }
 
@@ -4050,10 +4249,78 @@ nav .container .card p {
 }
 
 @media screen and (min-width: 429px) and (max-width: 560px) {
+    body:not(.home-page) .article-left {
+        display: none;
+    }
 
     article .container {
         flex-direction: column;
         padding-top: 10px;
+    }
+
+    .article1 .article-right .about h1.dark,
+    .article2 .article-right .about h1.dark {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .article-web .article-right .about .line-about {
+        margin-left: 38px;
+        margin-top: 10px;
+        margin-left: 38px;
+        width: 260px;
+    }
+
+    .article-web .article-right {
+        margin-bottom: 10px !important;
+    }
+
+    .centrer-d {
+        padding-left: 0px !important;
+    }
+
+    .article-web .article-right .about {
+        flex-direction: column;
+        padding: 45px 0px 0px 0px !important;
+
+    }
+
+
+
+    .arrow-back {
+        right: 6% !important;
+        top: 3% !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .arrow-back img {
+        width: 25px !important;
+
+    }
+
+    .article2 .article-right .about h1 {
+        font-size: 20px;
+    }
+
+    .custom-iframe {
+        width: 380px !important;
+        height: 590px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .iframe-container {
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .centrer-d {
+        padding-left: 102px;
+        flex-direction: column;
+        padding-bottom: 10px;
     }
 
     .article2 .right-end .work p.lav {
@@ -4459,8 +4726,8 @@ nav .container .card p {
     .article3 .cardtwo {
         width: 200px;
         height: 145px;
-            margin: auto;
-    margin-top: 23px;
+        margin: auto;
+        margin-top: 23px;
     }
 
     .article3 .right-card img {
@@ -4477,7 +4744,7 @@ nav .container .card p {
         font-size: 11px;
     }
 
- 
+
 
     .article3 .article-right {
         height: 1260px;
@@ -4492,8 +4759,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 420px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 420px !important;
         margin: auto;
         margin-bottom: 8px;
 
@@ -4770,6 +5038,48 @@ nav .container .card p {
         margin-top: 87px;
     }
 
+    body:not(.home-page) .article-left {
+        display: none;
+    }
+
+    .article1 .article-right .about h1.dark,
+    .article2 .article-right .about h1.dark {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .arrow-back {
+        right: 4% !important;
+        top: 2% !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .arrow-back img {
+        width: 25px !important;
+
+    }
+
+    .article-web .article-right .about .line-about {
+        margin-left: 38px;
+        margin-top: 10px;
+        margin-left: 38px;
+        width: 260px;
+    }
+
+    .centrer-d {
+        padding-left: 0px !important;
+    }
+
+    .article-web .article-right .about {
+        flex-direction: column;
+        padding: 45px 0px 0px 0px !important;
+
+    }
+
+
+
     .article1 .article-right p.text.grey.en {
         margin-bottom: 15px;
         width: 272px;
@@ -4779,6 +5089,24 @@ nav .container .card p {
         margin: 0 7px 12px 0 !important;
     }
 
+    .custom-iframe {
+        width: 320px !important;
+        height: 590px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .iframe-container {
+        margin: auto;
+        padding-top: 45px !important;
+    }
+
+    .centrer-d {
+        padding-left: 82px;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
 
     .centrer-d {
         display: flex;
@@ -5246,8 +5574,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 350px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 350px !important;
         margin: auto;
         margin-bottom: 8px;
 
@@ -5612,9 +5941,53 @@ nav .container .card p {
         margin-top: 87px;
     }
 
+    body:not(.home-page) .article-left {
+        display: none;
+    }
+
+
     .article2 .right-end .work p.en.lav {
         margin: 0 6px 12px 0;
     }
+
+    .arrow-back {
+        right: 4% !important;
+        top: 2% !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .arrow-back img {
+        width: 20px !important;
+
+    }
+
+    .article-web .article-right .about .line-about {
+        margin-left: 38px;
+        margin-top: 10px;
+
+        margin-left: 0px !important;
+        width: 231px !important;
+    }
+
+    .centrer-d {
+        padding-left: 0px !important;
+    }
+
+    .article-web .article-right .about {
+        flex-direction: column;
+        padding: 45px 0px 0px 0px !important;
+
+    }
+
+
+    .article1 .article-right .about h1.dark,
+    .article2 .article-right .about h1.dark {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
 
     .article3 .article-right {
         height: 1135px !important;
@@ -5636,6 +6009,25 @@ nav .container .card p {
 
     .article1 .card-desc .card img {
         margin: -5.5px 4px 0px 23px;
+    }
+
+    .custom-iframe {
+        width: 280px !important;
+        height: 600px !important;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .iframe-container {
+        margin: auto;
+        padding-top: 35px !important;
+    }
+
+    .centrer-d {
+        padding-left: 82px;
+        flex-direction: column;
+        padding-bottom: 10px;
     }
 
     article .container {
@@ -6092,8 +6484,9 @@ nav .container .card p {
     .article1 .article-right,
     .article2 .article-right,
     .article3 .article-right,
-    .article4 .article-right {
-        width: 320px;
+    .article4 .article-right,
+    .article-web .article-right {
+        width: 320px !important;
         margin: auto;
         margin-bottom: 8px;
 
@@ -6549,19 +6942,22 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Filtre d'opacité noir */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Filtre d'opacité noir */
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
     z-index: 9999;
-  }
-  
-  .loader {
+}
+
+.loader {
     display: flex;
     gap: 0.5em;
-  }
-  
-  .leaf {
+}
+
+.leaf {
     width: 1em;
     height: 3em;
     background-color: #c5c7c9;
@@ -6569,25 +6965,114 @@ body {
     transform: rotate(-30deg);
     animation: color 1200ms infinite;
     animation-delay: 500ms;
-  }
-  
-  .leaf:nth-child(2) {
+}
+
+.leaf:nth-child(2) {
     clip-path: polygon(0% 35%, 100% 35%, 100% 100%, 0% 81%);
     animation-delay: 200ms;
-  }
-  
-  .leaf:nth-child(1) {
+}
+
+.leaf:nth-child(1) {
     clip-path: polygon(0% 70%, 100% 70%, 100% 100%, 0% 81%);
     animation-delay: 0ms;
-  }
-  
-  @keyframes color {
+}
+
+@keyframes color {
     from {
-      background-color: #95c88d;
+        background-color: #95c88d;
     }
-  
-    to {
-    }
-  }
-  
+
+    to {}
+}
+
 /* Loader FIN */
+
+
+/* website debut */
+/* Style pour l'iframe */
+.custom-iframe {
+    width: 820px;
+    height: 605px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le conteneur */
+.iframe-container {
+
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+p.soustitre-p {
+    font-family: "Poppins";
+    padding-left: 5px;
+    padding-top: -5px;
+    font-size: 17px;
+}
+
+/* fleche retour */
+.arrow-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+
+    background-color: #ebf2fa;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.arrow-back img {
+    width: 30px;
+
+}
+
+
+.article-web .article-right {
+
+    background: #ffff;
+    width: 890px;
+    height: 820px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+
+
+}
+
+.article-web .article-right .about h1 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.025em;
+    color: #0B0909;
+
+}
+
+.article-web .article-right .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 45px 0px 0px 70px;
+}
+
+.article-web .article-right .about .line-about {
+    margin-left: 38px;
+    width: 260px;
+    height: 2.4px;
+    background: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1) 26.2%, rgba(178, 231, 170, 1) 50.6%, rgba(144, 213, 135, 1) 74.1%, rgba(75, 118, 69, 1) 100.3%);
+}
+
+
+/* website fin */

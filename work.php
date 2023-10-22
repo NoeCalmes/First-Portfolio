@@ -1,7 +1,7 @@
 <?php $activePage = 'work'; // Page active?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<div id="loader-overlay">
+    <div id="loader-overlay">
         <div class="loader">
             <div class="leaf"></div>
             <div class="leaf"></div>
@@ -63,8 +63,8 @@
                 <img class="image" src="img/image.png" alt="">
                 <h1 class="dark calmes">Noé Calmes</h1>
                 <div class="centrelangue">
-                    <p class=" grey noe fr">Front-end Développeur </p>
-                    <p class=" grey noe en" style="display:none;">Front-end Developer </p>
+                    <p class=" grey noe fr">Etudiant/Développeur </p>
+                    <p class=" grey noe en" style="display:none;">Student/Developer </p>
                 </div>
 
 
@@ -169,7 +169,7 @@
                             </div>
                         </button></a>
 
-                        <a href="pdf/cv-noecalmes.pdf"><button class="download en" style="display:none;">Download Resume
+                    <a href="pdf/cv-noecalmes.pdf"><button class="download en" style="display:none;">Download Resume
                             <div class="icon-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
                                     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -222,14 +222,14 @@
     <footer>
         <div class="container-footer">
             <h1>© Copyright 2023 </h1>
-            <p class="fr" > - Noé Calmes. Tous droits réservés.</p>
-            <p class="en" style="display:none;" > - Noé Calmes. All rights reserved.</p>
+            <p class="fr"> - Noé Calmes. Tous droits réservés.</p>
+            <p class="en" style="display:none;"> - Noé Calmes. All rights reserved.</p>
         </div>
     </footer>
 
 
 
-    
+
     <footer class="mobile">
         <div class="container-footer">
 

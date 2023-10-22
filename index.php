@@ -1,7 +1,7 @@
 <?php $activePage = 'index'; // Page active?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="home-page">
 
     <div id="loader-overlay">
         <div class="loader">
@@ -30,7 +30,7 @@
             <div class="leaf"></div>
         </div>
     </div>
-    
+
     <!-- header debut -->
     <div class="header">
         <div class="left">
@@ -66,8 +66,8 @@
                 <img class="image" src="img/image.png" alt="">
                 <h1 class="dark calmes">Noé Calmes</h1>
                 <div class="centrelangue">
-                    <p class=" grey noe fr">Front-end Développeur </p>
-                    <p class=" grey noe en" style="display:none;">Front-end Developer </p>
+                    <p class=" grey noe fr">Edutant/Développeur </p>
+                    <p class=" grey noe en" style="display:none;">Student/Developer </p>
                 </div>
 
 

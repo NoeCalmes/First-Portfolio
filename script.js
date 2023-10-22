@@ -84,16 +84,10 @@ window.addEventListener('load', () => {
 
 //loader debut
 // Fonction pour afficher le loader
-function showLoader() {
-    document.getElementById('loader-overlay').style.display = 'flex';
-  }
-  
-  // Fonction pour masquer le loader
-  function hideLoader() {
+// Fonction pour masquer le loader
+function hideLoader() {
     document.getElementById('loader-overlay').style.display = 'none';
-  }
-  // Attachez l'événement pour afficher le loader lorsque la page commence à se charger
-  window.addEventListener('load', hideLoader);
-  // Attachez l'événement pour masquer le loader lorsque la page a terminé de se charger
-  window.addEventListener('beforeunload', showLoader);
-  
+}
+
+// Attachez l'événement pour masquer le loader lorsque la page est complètement chargée
+window.addEventListener('load', hideLoader);
